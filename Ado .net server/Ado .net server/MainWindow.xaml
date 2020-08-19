@@ -1,0 +1,45 @@
+﻿<Window x:Class="Ado.net_server.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ado.net_server"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <GradientStop Color="#FF094653" Offset="0.12"/>
+                <GradientStop Color="#FF6E7C16" Offset="0.992"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition ></ColumnDefinition>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition ></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="1" Margin="20">
+            <ComboBox Name="cbConect" >
+                <ComboBoxItem Selected="cmb1_Selected" Name="cmb1">Windows autefication</ComboBoxItem>
+                <ComboBoxItem Selected="cmb2_Selected" Name="cmb2">Server</ComboBoxItem>
+            </ComboBox>
+            <Label Name="lServ" Visibility="Hidden">Server name</Label>
+            <TextBox Name="tbServer"  Visibility="Hidden">server</TextBox>
+            <Label Name="lLog"  Visibility="Hidden">Login</Label>
+            <TextBox Name="tbLogin"   Visibility="Hidden">login</TextBox>
+            <Label Name="lPass"  Visibility="Hidden">Password</Label>
+            <PasswordBox Name="pwbPassword" Visibility="Hidden"></PasswordBox>
+            <Button x:Name="bConnect"  Margin="10 15 10 0" Visibility="Hidden" Click="Button_Click">connect</Button>
+        </StackPanel>
+        <Grid Grid.Column="2">
+            <ListBox  Name="lbServers" Visibility="Collapsed">
+                <ListBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="#FF0F0B2C" Offset="0.964"/>
+                        <GradientStop Color="#FF176C61" Offset="0.185"/>
+                    </LinearGradientBrush>
+                </ListBox.Background>
+            </ListBox>
+        </Grid>
+    </Grid>
+</Window>
