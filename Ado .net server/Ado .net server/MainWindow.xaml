@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ado.net_server"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="450" Width="800" MinWidth="600">
+    <Grid >
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                 <GradientStop Color="#FF094653" Offset="0.12"/>
@@ -16,6 +16,8 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition ></ColumnDefinition>
             <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition Width="2*" MinWidth="250"></ColumnDefinition>
+            <ColumnDefinition Width="2*" MinWidth="200"></ColumnDefinition>
             <ColumnDefinition ></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="1" Margin="20">
@@ -32,14 +34,30 @@
             <Button x:Name="bConnect"  Margin="10 15 10 0" Visibility="Hidden" Click="Button_Click">connect</Button>
         </StackPanel>
         <Grid Grid.Column="2">
-            <ListBox  Name="lbServers" Visibility="Collapsed">
+            <ListBox  Name="lbServers" Visibility="Visible" BorderBrush="#FF061032" Foreground="#FFE2D8D8" Padding="10" Selected="lbServers_Selected">
                 <ListBox.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
-                        <GradientStop Color="#FF0F0B2C" Offset="0.964"/>
-                        <GradientStop Color="#FF176C61" Offset="0.185"/>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF0A162C"/>
+                        <GradientStop Color="#FFAE9709" Offset="1"/>
                     </LinearGradientBrush>
                 </ListBox.Background>
             </ListBox>
+        </Grid>
+        <Grid Grid.Column="3">
+            <StackPanel>
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF0A162C"/>
+                        <GradientStop Color="#FFAE9709" Offset="1"/>
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+                <ComboBox Name="cbTable">
+
+                </ComboBox>
+            <ListBox Name="lbElTable" Visibility="Visible" BorderBrush="#FF061032" Foreground="#FFE2D8D8" Padding="10" Background="Transparent">
+           
+            </ListBox>
+            </StackPanel>
         </Grid>
     </Grid>
 </Window>

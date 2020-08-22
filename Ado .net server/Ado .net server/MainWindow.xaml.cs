@@ -28,6 +28,8 @@ namespace Ado.net_server
 
             tbServer.Text = "";
             bConnect.Visibility = Visibility.Visible;
+
+            lbServers.Items.Clear();
         }
         private void cmb2_Selected(object sender, RoutedEventArgs e)
         {
@@ -46,6 +48,8 @@ namespace Ado.net_server
             tbServer.Text = "";
             pwbPassword.Password = "";
             bConnect.Visibility = Visibility.Visible;
+
+            lbServers.Items.Clear();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -64,6 +68,37 @@ namespace Ado.net_server
                     connection.Open();
                     SqlCommand command = new SqlCommand("select Name from sys.sysdatabases", connection);
                     SqlDataReader reader= command.ExecuteReader();
+                    if (reader.HasRows)
+                    {
+                        while (reader.Read())
+                        {
+                            lbServers.Items.Add(reader["Name"]);
+                        }
+                    }
+                    reader.Close();
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void lbServers_Selected(object sender, RoutedEventArgs e)
+        {
+            string connectStr;
+            if ((cbConect.SelectedItem as ComboBoxItem).Content.ToString() == "Server")
+                connectStr = $@"Data Source={tbServer.Text};Initial Catalog=master;Integrated Security=false;User Id={tbLogin.Text};Password={pwbPassword.Password};";
+            else
+                connectStr = $"Data Source={tbServer.Text};Initial Catalog=master;Integrated Security=True";
+
+            using (SqlConnection connection = new SqlConnection(connectStr))
+            {
+                try
+                {
+                    connection.Open();
+                    SqlCommand command = new SqlCommand("select Name from sys.sysdatabases", connection);
+                    SqlDataReader reader = command.ExecuteReader();
                     if (reader.HasRows)
                     {
                         while (reader.Read())
