@@ -34,7 +34,7 @@
             <Button x:Name="bConnect"  Margin="10 15 10 0" Visibility="Hidden" Click="Button_Click">connect</Button>
         </StackPanel>
         <Grid Grid.Column="2">
-            <ListBox  Name="lbServers" Visibility="Visible" BorderBrush="#FF061032" Foreground="#FFE2D8D8" Padding="10" Selected="lbServers_Selected">
+            <ListBox  Name="lbServers" Visibility="Hidden" BorderBrush="#FF061032" Foreground="#FFE2D8D8" Padding="10" SelectionChanged="lbServers_SelectionChanged">
                 <ListBox.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF0A162C"/>
@@ -44,19 +44,19 @@
             </ListBox>
         </Grid>
         <Grid Grid.Column="3">
-            <StackPanel>
+            <StackPanel x:Name="StackTabl" Height="419" VerticalAlignment="Bottom" Visibility="Hidden">
                 <StackPanel.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF0A162C"/>
                         <GradientStop Color="#FFAE9709" Offset="1"/>
                     </LinearGradientBrush>
                 </StackPanel.Background>
-                <ComboBox Name="cbTable">
+                <ComboBox Name="cbTable" SelectionChanged="cbTable_SelectionChanged">
 
                 </ComboBox>
-            <ListBox Name="lbElTable" Visibility="Visible" BorderBrush="#FF061032" Foreground="#FFE2D8D8" Padding="10" Background="Transparent">
-           
-            </ListBox>
+                <ListBox Name="lbElTable" BorderBrush="#FF061032" Foreground="#FFE2D8D8" Padding="10" Background="Transparent">
+
+                </ListBox>
             </StackPanel>
         </Grid>
     </Grid>

@@ -13,3 +13,18 @@ C:\Users\Рома\Desktop\Step\ADO.Net\Ado .net server\Ado .net server\obj\Debug
 C:\Users\Рома\Desktop\Step\ADO.Net\Ado .net server\Ado .net server\obj\Debug\Ado .net server.csproj.CoreCompileInputs.cache
 C:\Users\Рома\Desktop\Step\ADO.Net\Ado .net server\Ado .net server\obj\Debug\Ado.net_server.exe
 C:\Users\Рома\Desktop\Step\ADO.Net\Ado .net server\Ado .net server\obj\Debug\Ado.net_server.pdb
+D:\User\Desktop\STEP\ADO.NET\Ado .net server\Ado .net server\obj\Debug\Ado .net server.csprojAssemblyReference.cache
+D:\User\Desktop\STEP\ADO.NET\Ado .net server\Ado .net server\obj\Debug\MainWindow.g.cs
+D:\User\Desktop\STEP\ADO.NET\Ado .net server\Ado .net server\obj\Debug\App.g.cs
+D:\User\Desktop\STEP\ADO.NET\Ado .net server\Ado .net server\obj\Debug\Ado.net_server_MarkupCompile.cache
+D:\User\Desktop\STEP\ADO.NET\Ado .net server\Ado .net server\obj\Debug\Ado.net_server_MarkupCompile.lref
+D:\User\Desktop\STEP\ADO.NET\Ado .net server\Ado .net server\obj\Debug\Ado.net_server.exe
+D:\User\Desktop\STEP\ADO.NET\Ado .net server\Ado .net server\obj\Debug\Ado.net_server.pdb
+D:\User\Desktop\STEP\ADO.NET\Ado .net server\Ado .net server\bin\Debug\Ado.net_server.exe.config
+D:\User\Desktop\STEP\ADO.NET\Ado .net server\Ado .net server\bin\Debug\Ado.net_server.exe
+D:\User\Desktop\STEP\ADO.NET\Ado .net server\Ado .net server\bin\Debug\Ado.net_server.pdb
+D:\User\Desktop\STEP\ADO.NET\Ado .net server\Ado .net server\obj\Debug\MainWindow.baml
+D:\User\Desktop\STEP\ADO.NET\Ado .net server\Ado .net server\obj\Debug\Ado.net_server.g.resources
+D:\User\Desktop\STEP\ADO.NET\Ado .net server\Ado .net server\obj\Debug\Ado.net_server.Properties.Resources.resources
+D:\User\Desktop\STEP\ADO.NET\Ado .net server\Ado .net server\obj\Debug\Ado .net server.csproj.GenerateResource.cache
+D:\User\Desktop\STEP\ADO.NET\Ado .net server\Ado .net server\obj\Debug\Ado .net server.csproj.CoreCompileInputs.cache

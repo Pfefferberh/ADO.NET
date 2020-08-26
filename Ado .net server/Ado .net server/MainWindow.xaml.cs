@@ -1,6 +1,7 @@
 ﻿using System.Data.SqlClient;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 
 namespace Ado.net_server
 {
@@ -9,6 +10,9 @@ namespace Ado.net_server
     /// </summary>
     public partial class MainWindow : Window
     {
+        static SqlConnection connection = new SqlConnection();
+        static string connectStr;
+        string str;
         public MainWindow()
         {
             InitializeComponent();
@@ -28,6 +32,8 @@ namespace Ado.net_server
 
             tbServer.Text = "";
             bConnect.Visibility = Visibility.Visible;
+
+            StackTabl.Visibility = Visibility.Hidden;
 
             lbServers.Items.Clear();
         }
@@ -49,61 +55,57 @@ namespace Ado.net_server
             pwbPassword.Password = "";
             bConnect.Visibility = Visibility.Visible;
 
+            StackTabl.Visibility = Visibility.Hidden;
+
             lbServers.Items.Clear();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             lbServers.Visibility = Visibility.Visible;
-            string connectStr;
             if ((cbConect.SelectedItem as ComboBoxItem).Content.ToString() == "Server")
                 connectStr = $@"Data Source={tbServer.Text};Initial Catalog=master;Integrated Security=false;User Id={tbLogin.Text};Password={pwbPassword.Password};";
             else
                 connectStr = $"Data Source={tbServer.Text};Initial Catalog=master;Integrated Security=True";
 
-            using (SqlConnection connection=new SqlConnection(connectStr))
+            using (connection = new SqlConnection(connectStr))
             {
-                try
-                {
-                    connection.Open();
-                    SqlCommand command = new SqlCommand("select Name from sys.sysdatabases", connection);
-                    SqlDataReader reader= command.ExecuteReader();
-                    if (reader.HasRows)
-                    {
-                        while (reader.Read())
-                        {
-                            lbServers.Items.Add(reader["Name"]);
-                        }
-                    }
-                    reader.Close();
-                }
-                catch (SqlException ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+                connection.Open();
+                Commander(lbServers, "select Name from sys.sysdatabases", "Name");
             }
         }
-
-        private void lbServers_Selected(object sender, RoutedEventArgs e)
+        private void lbServers_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            string connectStr;
-            if ((cbConect.SelectedItem as ComboBoxItem).Content.ToString() == "Server")
-                connectStr = $@"Data Source={tbServer.Text};Initial Catalog=master;Integrated Security=false;User Id={tbLogin.Text};Password={pwbPassword.Password};";
-            else
-                connectStr = $"Data Source={tbServer.Text};Initial Catalog=master;Integrated Security=True";
-
-            using (SqlConnection connection = new SqlConnection(connectStr))
+            StackTabl.Visibility = Visibility.Visible;
+            lbElTable.Items.Clear();
+            cbTable.Items.Clear();
+            using (connection = new SqlConnection(connectStr))
             {
+                connection.Open();
+                Commander(cbTable, $"use {lbServers.SelectedItem.ToString()}; select Name From sys.tables","Name");
+            }
+             str = lbServers.SelectedItem.ToString();
+        }
+        private void cbTable_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            lbElTable.Items.Clear();
+            using (connection = new SqlConnection(connectStr))
+            {
+                connection.Open();
+                Commander(lbElTable, $"use {str};  select ID From {cbTable.SelectedItem.ToString()} ", "ID");
+            }
+        }
+        private void Commander(Selector list,string sql, string s)
+        {
                 try
                 {
-                    connection.Open();
-                    SqlCommand command = new SqlCommand("select Name from sys.sysdatabases", connection);
+                    SqlCommand command = new SqlCommand(sql, connection);
                     SqlDataReader reader = command.ExecuteReader();
                     if (reader.HasRows)
                     {
                         while (reader.Read())
                         {
-                            lbServers.Items.Add(reader["Name"]);
+                            list.Items.Add(reader[s]);
                         }
                     }
                     reader.Close();
@@ -112,7 +114,6 @@ namespace Ado.net_server
                 {
                     MessageBox.Show(ex.Message);
                 }
-            }
         }
     }
 }
