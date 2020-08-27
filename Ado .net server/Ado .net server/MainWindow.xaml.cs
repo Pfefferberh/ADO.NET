@@ -76,44 +76,53 @@ namespace Ado.net_server
         }
         private void lbServers_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            StackTabl.Visibility = Visibility.Visible;
             lbElTable.Items.Clear();
             cbTable.Items.Clear();
+            if (lbServers.SelectedItem == null)
+                return;
+            StackTabl.Visibility = Visibility.Visible;
+            str = lbServers.SelectedItem.ToString();
             using (connection = new SqlConnection(connectStr))
             {
                 connection.Open();
-                Commander(cbTable, $"use {lbServers.SelectedItem.ToString()}; select Name From sys.tables","Name");
+                Commander(cbTable, $"use {lbServers.SelectedItem.ToString()}; select Name From sys.tables", "Name");
             }
-             str = lbServers.SelectedItem.ToString();
+
         }
         private void cbTable_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             lbElTable.Items.Clear();
+            if (!cbTable.Items.IsEmpty)
+                lbElTable_SelectionChanged(null, null);
+        }
+        private void Commander(Selector list, string sql, string s)
+        {
+            try
+            {
+                SqlCommand command = new SqlCommand(sql, connection);
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        list.Items.Add(reader[s]);
+                    }
+                }
+                reader.Close();
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void lbElTable_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
             using (connection = new SqlConnection(connectStr))
             {
                 connection.Open();
                 Commander(lbElTable, $"use {str};  select ID From {cbTable.SelectedItem.ToString()} ", "ID");
             }
-        }
-        private void Commander(Selector list,string sql, string s)
-        {
-                try
-                {
-                    SqlCommand command = new SqlCommand(sql, connection);
-                    SqlDataReader reader = command.ExecuteReader();
-                    if (reader.HasRows)
-                    {
-                        while (reader.Read())
-                        {
-                            list.Items.Add(reader[s]);
-                        }
-                    }
-                    reader.Close();
-                }
-                catch (SqlException ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
         }
     }
 }

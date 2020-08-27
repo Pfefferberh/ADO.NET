@@ -43,21 +43,17 @@
                 </ListBox.Background>
             </ListBox>
         </Grid>
-        <Grid Grid.Column="3">
-            <StackPanel x:Name="StackTabl" Height="419" VerticalAlignment="Bottom" Visibility="Hidden">
-                <StackPanel.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="#FF0A162C"/>
-                        <GradientStop Color="#FFAE9709" Offset="1"/>
-                    </LinearGradientBrush>
-                </StackPanel.Background>
-                <ComboBox Name="cbTable" SelectionChanged="cbTable_SelectionChanged">
-
-                </ComboBox>
-                <ListBox Name="lbElTable" BorderBrush="#FF061032" Foreground="#FFE2D8D8" Padding="10" Background="Transparent">
-
-                </ListBox>
-            </StackPanel>
-        </Grid>
+        <StackPanel Grid.Column="3"  x:Name="StackTabl" Visibility="Hidden">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0A162C"/>
+                    <GradientStop Color="#FFAE9709" Offset="1"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <Grid VerticalAlignment="Bottom" >
+                <ComboBox Name="cbTable" Margin="0 10 0 0" Height="25" VerticalAlignment="Top" SelectionChanged="cbTable_SelectionChanged"></ComboBox>
+                <ListBox  Name="lbElTable" Margin="0 35 0 0" BorderBrush="#FF061032" Foreground="#FFE2D8D8" Padding="10" Background="Transparent" SelectionChanged="lbElTable_SelectionChanged"></ListBox>
+            </Grid>
+        </StackPanel>
     </Grid>
 </Window>
