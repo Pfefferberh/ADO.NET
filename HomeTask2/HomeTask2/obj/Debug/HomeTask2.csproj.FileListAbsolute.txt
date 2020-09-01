@@ -1,0 +1,17 @@
+D:\User\Desktop\STEP\ADO.NET\HomeTask2\HomeTask2\bin\Debug\HomeTask2.exe.config
+D:\User\Desktop\STEP\ADO.NET\HomeTask2\HomeTask2\bin\Debug\HomeTask2.exe
+D:\User\Desktop\STEP\ADO.NET\HomeTask2\HomeTask2\bin\Debug\HomeTask2.pdb
+D:\User\Desktop\STEP\ADO.NET\HomeTask2\HomeTask2\obj\Debug\HomeTask2.csprojAssemblyReference.cache
+D:\User\Desktop\STEP\ADO.NET\HomeTask2\HomeTask2\obj\Debug\MainWindow.g.cs
+D:\User\Desktop\STEP\ADO.NET\HomeTask2\HomeTask2\obj\Debug\App.g.cs
+D:\User\Desktop\STEP\ADO.NET\HomeTask2\HomeTask2\obj\Debug\HomeTask2_MarkupCompile.cache
+D:\User\Desktop\STEP\ADO.NET\HomeTask2\HomeTask2\obj\Debug\HomeTask2_MarkupCompile.lref
+D:\User\Desktop\STEP\ADO.NET\HomeTask2\HomeTask2\obj\Debug\MainWindow.baml
+D:\User\Desktop\STEP\ADO.NET\HomeTask2\HomeTask2\obj\Debug\HomeTask2.g.resources
+D:\User\Desktop\STEP\ADO.NET\HomeTask2\HomeTask2\obj\Debug\HomeTask2.Properties.Resources.resources
+D:\User\Desktop\STEP\ADO.NET\HomeTask2\HomeTask2\obj\Debug\HomeTask2.csproj.GenerateResource.cache
+D:\User\Desktop\STEP\ADO.NET\HomeTask2\HomeTask2\obj\Debug\HomeTask2.csproj.CoreCompileInputs.cache
+D:\User\Desktop\STEP\ADO.NET\HomeTask2\HomeTask2\obj\Debug\HomeTask2.exe
+D:\User\Desktop\STEP\ADO.NET\HomeTask2\HomeTask2\obj\Debug\HomeTask2.pdb
+D:\User\Desktop\STEP\ADO.NET\HomeTask2\HomeTask2\obj\Debug\Add.g.cs
+D:\User\Desktop\STEP\ADO.NET\HomeTask2\HomeTask2\obj\Debug\Add.baml
