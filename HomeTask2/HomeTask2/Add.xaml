@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HomeTask2"
         mc:Ignorable="d"
-        Title="Add" Height="450" Width="300">
+        Title="Add" Height="350" Width="300">
     <Grid>
         <StackPanel>
-            <TextBox x:Name="tbName" Margin="40" ></TextBox>
-            <TextBox x:Name="tbSurname" Margin="40"></TextBox>
-            <ComboBox x:Name="cbGroup" Margin="40" SelectedIndex="0" ></ComboBox>
-            <Button  Margin="60" Click="Button_Click">save</Button>
+            <TextBox x:Name="tbName" Margin="40 40 40 20" ></TextBox>
+            <TextBox x:Name="tbSurname" Margin="40 20"></TextBox>
+            <ComboBox x:Name="cbGroup" Margin="40 20" SelectedIndex="0" ></ComboBox>
+            <Button  Margin="60 30" Click="Button_Click">save</Button>
         </StackPanel>
     </Grid>
 </Window>

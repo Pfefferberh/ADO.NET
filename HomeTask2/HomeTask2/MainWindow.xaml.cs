@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Configuration;
+using System.Data.Common;
 using System.Data.SqlClient;
 using System.Windows;
 
@@ -39,16 +40,21 @@ namespace HomeTask2
         {
             i = 0;
             List<string> ret = new List<string>();
+            string provider = ConfigurationManager.AppSettings["provider"];
             string connectionString = ConfigurationManager.ConnectionStrings["defaultConnection"].ConnectionString;
-            using (SqlConnection connecct = new SqlConnection(connectionString))
+            DbProviderFactory factory = DbProviderFactories.GetFactory(provider);
+            using (DbConnection connection = factory.CreateConnection())
             {
                 try
                 {
-                    connecct.Open();
-                    SqlCommand command = new SqlCommand(select, connecct);
+                    connection.ConnectionString = connectionString;
+                    connection.Open();
+                    DbCommand command = factory.CreateCommand();
+                    command.CommandText = select;
+                    command.Connection = connection;
                     if (read)
                     {
-                        SqlDataReader reader = command.ExecuteReader();
+                        DbDataReader reader = command.ExecuteReader();
                         if (reader.HasRows)
                             while (reader.Read())
                             {
