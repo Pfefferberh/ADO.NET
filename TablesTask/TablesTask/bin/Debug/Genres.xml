@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <Genres>
+    <Id>1</Id>
+    <Name>IT</Name>
+  </Genres>
+  <Genres>
+    <Id>2</Id>
+    <Name>Fantastic</Name>
+  </Genres>
+  <Genres>
+    <Id>3</Id>
+    <Name>Liric</Name>
+  </Genres>
+  <Genres>
+    <Id>4</Id>
+    <Name>Tales</Name>
+  </Genres>
+  <Genres>
+    <Id>5</Id>
+    <Name>Novels</Name>
+  </Genres>
+</DocumentElement>

@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <__MigrationHistory>
+    <MigrationId>202007151443497_InitialCreate</MigrationId>
+    <ContextKey>Asp_01_intro.DataBase.BooksContext</ContextKey>
+    <Model>System.Byte[]</Model>
+    <ProductVersion>6.2.0-61023</ProductVersion>
+  </__MigrationHistory>
+</DocumentElement>

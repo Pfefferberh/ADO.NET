@@ -1,0 +1,15 @@
+D:\User\Desktop\STEP\ADO.NET\TablesTask\TablesTask\bin\Debug\TablesTask.exe.config
+D:\User\Desktop\STEP\ADO.NET\TablesTask\TablesTask\bin\Debug\TablesTask.exe
+D:\User\Desktop\STEP\ADO.NET\TablesTask\TablesTask\bin\Debug\TablesTask.pdb
+D:\User\Desktop\STEP\ADO.NET\TablesTask\TablesTask\obj\Debug\TablesTask.csprojAssemblyReference.cache
+D:\User\Desktop\STEP\ADO.NET\TablesTask\TablesTask\obj\Debug\MainWindow.g.cs
+D:\User\Desktop\STEP\ADO.NET\TablesTask\TablesTask\obj\Debug\App.g.cs
+D:\User\Desktop\STEP\ADO.NET\TablesTask\TablesTask\obj\Debug\TablesTask_MarkupCompile.cache
+D:\User\Desktop\STEP\ADO.NET\TablesTask\TablesTask\obj\Debug\TablesTask_MarkupCompile.lref
+D:\User\Desktop\STEP\ADO.NET\TablesTask\TablesTask\obj\Debug\MainWindow.baml
+D:\User\Desktop\STEP\ADO.NET\TablesTask\TablesTask\obj\Debug\TablesTask.g.resources
+D:\User\Desktop\STEP\ADO.NET\TablesTask\TablesTask\obj\Debug\TablesTask.Properties.Resources.resources
+D:\User\Desktop\STEP\ADO.NET\TablesTask\TablesTask\obj\Debug\TablesTask.csproj.GenerateResource.cache
+D:\User\Desktop\STEP\ADO.NET\TablesTask\TablesTask\obj\Debug\TablesTask.csproj.CoreCompileInputs.cache
+D:\User\Desktop\STEP\ADO.NET\TablesTask\TablesTask\obj\Debug\TablesTask.exe
+D:\User\Desktop\STEP\ADO.NET\TablesTask\TablesTask\obj\Debug\TablesTask.pdb
