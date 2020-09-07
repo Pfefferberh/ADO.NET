@@ -1,0 +1,9 @@
+D:\User\Desktop\STEP\ADO.NET\DataAdapter\DataAdapter\bin\Debug\DataAdapter.exe.config
+D:\User\Desktop\STEP\ADO.NET\DataAdapter\DataAdapter\bin\Debug\DataAdapter.exe
+D:\User\Desktop\STEP\ADO.NET\DataAdapter\DataAdapter\bin\Debug\DataAdapter.pdb
+D:\User\Desktop\STEP\ADO.NET\DataAdapter\DataAdapter\obj\Debug\DataAdapter.csprojAssemblyReference.cache
+D:\User\Desktop\STEP\ADO.NET\DataAdapter\DataAdapter\obj\Debug\DataAdapter.Properties.Resources.resources
+D:\User\Desktop\STEP\ADO.NET\DataAdapter\DataAdapter\obj\Debug\DataAdapter.csproj.GenerateResource.cache
+D:\User\Desktop\STEP\ADO.NET\DataAdapter\DataAdapter\obj\Debug\DataAdapter.csproj.CoreCompileInputs.cache
+D:\User\Desktop\STEP\ADO.NET\DataAdapter\DataAdapter\obj\Debug\DataAdapter.exe
+D:\User\Desktop\STEP\ADO.NET\DataAdapter\DataAdapter\obj\Debug\DataAdapter.pdb
