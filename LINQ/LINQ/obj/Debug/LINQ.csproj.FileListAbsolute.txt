@@ -1,0 +1,7 @@
+D:\User\Desktop\STEP\ADO.NET\LINQ\LINQ\bin\Debug\LINQ.exe.config
+D:\User\Desktop\STEP\ADO.NET\LINQ\LINQ\bin\Debug\LINQ.exe
+D:\User\Desktop\STEP\ADO.NET\LINQ\LINQ\bin\Debug\LINQ.pdb
+D:\User\Desktop\STEP\ADO.NET\LINQ\LINQ\obj\Debug\LINQ.csprojAssemblyReference.cache
+D:\User\Desktop\STEP\ADO.NET\LINQ\LINQ\obj\Debug\LINQ.csproj.CoreCompileInputs.cache
+D:\User\Desktop\STEP\ADO.NET\LINQ\LINQ\obj\Debug\LINQ.exe
+D:\User\Desktop\STEP\ADO.NET\LINQ\LINQ\obj\Debug\LINQ.pdb
