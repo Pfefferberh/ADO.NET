@@ -1,0 +1,13 @@
+D:\User\Desktop\STEP\ADO.NET\CodeFirst\CodeFirst\bin\Debug\CodeFirst.exe.config
+D:\User\Desktop\STEP\ADO.NET\CodeFirst\CodeFirst\bin\Debug\CodeFirst.exe
+D:\User\Desktop\STEP\ADO.NET\CodeFirst\CodeFirst\bin\Debug\CodeFirst.pdb
+D:\User\Desktop\STEP\ADO.NET\CodeFirst\CodeFirst\bin\Debug\EntityFramework.dll
+D:\User\Desktop\STEP\ADO.NET\CodeFirst\CodeFirst\bin\Debug\EntityFramework.SqlServer.dll
+D:\User\Desktop\STEP\ADO.NET\CodeFirst\CodeFirst\bin\Debug\EntityFramework.xml
+D:\User\Desktop\STEP\ADO.NET\CodeFirst\CodeFirst\bin\Debug\EntityFramework.SqlServer.xml
+D:\User\Desktop\STEP\ADO.NET\CodeFirst\CodeFirst\bin\Debug\ru\EntityFramework.resources.dll
+D:\User\Desktop\STEP\ADO.NET\CodeFirst\CodeFirst\obj\Debug\CodeFirst.csprojAssemblyReference.cache
+D:\User\Desktop\STEP\ADO.NET\CodeFirst\CodeFirst\obj\Debug\CodeFirst.csproj.CoreCompileInputs.cache
+D:\User\Desktop\STEP\ADO.NET\CodeFirst\CodeFirst\obj\Debug\CodeFirst.csproj.CopyComplete
+D:\User\Desktop\STEP\ADO.NET\CodeFirst\CodeFirst\obj\Debug\CodeFirst.exe
+D:\User\Desktop\STEP\ADO.NET\CodeFirst\CodeFirst\obj\Debug\CodeFirst.pdb
