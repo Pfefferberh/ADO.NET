@@ -12,14 +12,14 @@ namespace DBLevel
         {
         }
 
-        public virtual DbSet<Achievement> Achievement { get; set; }
-        public virtual DbSet<Department> Department { get; set; }
+       // public virtual DbSet<Achievement> Achievement { get; set; }
+       // public virtual DbSet<Department> Department { get; set; }
         public virtual DbSet<Groups> Groups { get; set; }
         public virtual DbSet<Student> Student { get; set; }
-        public virtual DbSet<Subject> Subject { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
-        public virtual DbSet<Teacher> Teacher { get; set; }
-        public virtual DbSet<TeachersGroups> TeachersGroups { get; set; }
+        //public virtual DbSet<Subject> Subject { get; set; }
+        //public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        //public virtual DbSet<Teacher> Teacher { get; set; }
+        //public virtual DbSet<TeachersGroups> TeachersGroups { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
