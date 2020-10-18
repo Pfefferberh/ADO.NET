@@ -13,6 +13,7 @@ namespace UILevel
         private  IUnivers service;
         public ObservableCollection<StudentDTO> Students { get; set; } = new ObservableCollection<StudentDTO>();
         public ObservableCollection<GroupDTO> Groups { get; set; } = new ObservableCollection<GroupDTO>();
+      
         public Mai(IUnivers universityService)
         {
             InitializeComponent();
@@ -25,6 +26,7 @@ namespace UILevel
                 cbGroup.Items.Add(Groups[i].Name);
             }
         }
+       
         //public Mai()
         //{
         //    InitializeComponent();
@@ -36,7 +38,7 @@ namespace UILevel
         //        cbGroup.Items.Add(Groups[i].Name);
         //    }
         //}
-        private void Update(IUnivers universityService)
+            private void Update(IUnivers universityService)
         {
             Students.Clear();
             Groups.Clear();

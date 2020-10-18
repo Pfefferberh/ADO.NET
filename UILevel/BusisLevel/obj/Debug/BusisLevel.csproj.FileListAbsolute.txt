@@ -30,3 +30,5 @@ D:\User\Desktop\STEP\ADO.NET\UILevel\BusisLevel\bin\Debug\System.Memory.xml
 D:\User\Desktop\STEP\ADO.NET\UILevel\BusisLevel\bin\Debug\System.Numerics.Vectors.xml
 D:\User\Desktop\STEP\ADO.NET\UILevel\BusisLevel\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\User\Desktop\STEP\ADO.NET\UILevel\BusisLevel\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\User\Desktop\STEP\ADO.NET\UILevel\BusisLevel\bin\Debug\EntityFramework.SqlServer.dll
+D:\User\Desktop\STEP\ADO.NET\UILevel\BusisLevel\bin\Debug\EntityFramework.SqlServer.xml

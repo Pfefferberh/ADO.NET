@@ -58,7 +58,7 @@ namespace BusisLevel.Servise
 
         public IEnumerable<StudentDTO> GetStudents()
         {
-            var student = repoStudent.Read();
+            var student = repoStudent.Read().ToList();
             var modelStudent = mapper.Map<ICollection<StudentDTO>>(student);
             return modelStudent;
         }

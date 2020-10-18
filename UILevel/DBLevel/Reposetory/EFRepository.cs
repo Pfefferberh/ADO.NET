@@ -7,10 +7,10 @@ namespace DBLevel.Reposetory
 {
     public class EFRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
     {
-        private readonly Context context;
+        private readonly DbContext context;
         private readonly DbSet<TEntity> set;
 
-        public EFRepository(Context _context)
+        public EFRepository(DbContext _context)
         {
             context = _context;
             set = context.Set<TEntity>();
